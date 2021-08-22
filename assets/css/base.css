@@ -1,0 +1,43 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+}
+*{
+    /* có nghĩa là nó kế thừa các thẻ box-sizing chứa nó */
+    box-sizing: inherit;
+}
+html{
+    /* khi khai báo thế này 1rem = 10px */
+    font-size: 62.5%;
+    /* tương đương 16px */
+    line-height: 1.6rem;
+    /* khai báo fronts */
+    font-family: 'Roboto', sans-serif;
+    /* các thẻ con sẽ kế thừa border-box */
+    box-sizing: border-box;
+}
+/* p{
+    tương đương 12 px
+    font-size: 1.2rem;
+} */
+/* reponsive */
+.grid{
+    /* với thiết bị có kích thước > 1200 thì width = 1200*/
+    width: 1200px;
+    /* với thiết bị có kích thước < 1200 thì*/
+    /* max-width sẽ giảm kích thước width */
+    /*  cho vừa kích thước màn hình */
+    max-width: 100%;
+    /* căn giữa khối */
+    margin:  0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    /* những phần tử có  class này sẽ nằm ngang */
+    display: flex;
+    /* tổng độ dài thằng con vượt quá sẽ xuống hàng */
+    flex-wrap: wrap;
+}
