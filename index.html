@@ -20,8 +20,19 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item-separate">
-                            Vào của hàng ứng dụng
+                        <li class="header__navbar-item header__navbar-item--hover header__navbar-item-separate">
+                            Tải ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/imgs/ma_qr.png" alt="QR_code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./assets/imgs/icon-shop-chplay.png" alt="CH_play" class="header__qr-dowload-img">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./assets/imgs/icon-shop.png" alt="App_Store" class="header__qr-dowload-img">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <span class="no-poiter">Kết nối</span>
@@ -35,11 +46,63 @@
                         </li>
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class=" header__navbar-item header__navbar-item-notify--hover">
                             <a href="#" class="header__navbar-item-link">
                                 <i class="fas header__navbar-icon fa-bell"></i>
                                 Thông báo
                             </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--view">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./assets/imgs/image-skincare-9.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm</span>
+                                                <span class="header__notify-description">
+                                                    Mô tả 
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--view">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./assets/imgs/image-skincare-9.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm</span>
+                                                <span class="header__notify-description">
+                                                    Mô tả 
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--view">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./assets/imgs/image-skincare-9.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm</span>
+                                                <span class="header__notify-description">
+                                                    Mô tả 
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <footer class="header__notify-footer">
+                                    <a href="#" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <a href="#" class="header__navbar-item-link">
@@ -56,9 +119,62 @@
          <div class="container">
 
          </div>
-         <div class="footer">
+         <footer class="footer">
 
-         </div>
+         </footer>
+     </div>
+     <!-- Modal layout -->
+     <div class="modal">
+        <div class="modal__overlay">
+            <div class="modal__body">
+                <!-- authen form -->
+                <div class="auth--form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__headding">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email của bạn..."/>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn..."/>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn..."/>
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với
+                                <a href="#" class="auth-form__policy-link">
+                                    Điều khoản dịch vụ
+                                </a> &
+                                <a href="#" class="auth-form__policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn btn-nomal auth-form__control-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="#" class="btn btn--size-s icon_facebook btn--with-icon">
+                            <i class="auth-form__socials-icon  fab fa-facebook-square"></i>
+                            Kết nối với Facebook
+                        </a>
+
+                        <a href="#" class="btn btn--size-s icon_google btn--with-icon">
+                            <i class="auth-form__socials-icon  fab fa-google"></i>
+                            Kết nối với Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
      </div>
 </body>
 </html>
